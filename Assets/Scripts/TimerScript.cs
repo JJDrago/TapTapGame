@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class TimerScript : MonoBehaviour {
 
-	Image PasekCzasu;
+	Image PasekCzasu;       //grafika paska
 	public float maxTime = 10f;	//maksymalny czas do ustawienia w inspektorze
 	float timeLeft;		// pozostały czas
 	public GameObject napisTimesUp; //napis na ekranie
+
+    public Licznik _Licznik;
 
 	// Use this for initialization
 	void Start () {
@@ -26,7 +28,9 @@ public class TimerScript : MonoBehaviour {
 		} else {
 			napisTimesUp.SetActive (true); //włączamy napis na ekranie
 			Time.timeScale = 0; //zatrzymujemy upływ czasu, bo gra się skończyła
+            _Licznik.Rekord();
 		}
 		
 	}
+
 }
