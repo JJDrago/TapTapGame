@@ -555,8 +555,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxTime: 10
-  napisTimesUp: {fileID: 1797971979}
-  _Licznik: {fileID: 0}
+  menu: {fileID: 1797971979}
+  granie: 0
+  _Licznik: {fileID: 1264647036}
   odliczanie: {fileID: 8769038}
 --- !u!114 &725411583
 MonoBehaviour:
@@ -1056,10 +1057,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39db930c32a41f64d941122569f931ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  licznikPunktow: {fileID: 0}
+  licznikPunktow: {fileID: 932216262}
   punkty: 0
-  rekordNapis: {fileID: 0}
+  rekordNapis: {fileID: 1637421918}
   rekord: 0
+  timerScript: {fileID: 725411582}
 --- !u!1 &1472358230
 GameObject:
   m_ObjectHideFlags: 0

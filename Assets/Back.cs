@@ -7,7 +7,7 @@ public class Back : MonoBehaviour {
 
     public void _Back()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); //powró do menu start
     }
 }
     
